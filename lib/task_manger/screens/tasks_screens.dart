@@ -43,6 +43,8 @@ class TasksScreens extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          //back button
+        
           Container(
             padding: EdgeInsets.only(
                 top: context.propHeight(60.0),
@@ -52,19 +54,26 @@ class TasksScreens extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 25.0,
-                  child: IconButton(
-                    onPressed: () => Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => AllTask())),
-                    icon: Icon(
-                      Icons.list,
-                      size: 30.0,
-                      color: 
-                      AppColors.sexthTextColor
+                Row(
+                  children: [  IconButton(onPressed: 
+          () => Navigator.pop(context)
+          , icon: Icon(Icons.arrow_back_ios, color: Colors.white)),
+
+                    CircleAvatar(
+                      backgroundColor: Colors.white,
+                      radius: 25.0,
+                      child: IconButton(
+                        onPressed: () => Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => AllTask())),
+                        icon: Icon(
+                          Icons.list,
+                          size: 30.0,
+                          color: 
+                          AppColors.sexthTextColor
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
                 Row(
                   children: [

@@ -43,7 +43,7 @@ void initState() {
       Modular.to.pushReplacementNamed(AppRoutes.onboardingScreen);
       await prefs.setBool('isFirstTime', false);
     } else {
-      Modular.to.pushReplacementNamed(AppRoutes.homeLayout);
+      Modular.to.pushReplacementNamed(AppRoutes.broadcastScreen);
     }
   });
 

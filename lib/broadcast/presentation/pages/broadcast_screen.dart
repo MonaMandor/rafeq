@@ -113,7 +113,7 @@ class _BroadCastScreenState extends State<BroadCastScreen> {
                     IconButton(
                         onPressed: () {
                           Modular.to
-                              .pushReplacementNamed(AppRoutes.tasksScreens);
+                              .pushNamed(AppRoutes.tasksScreens);
                         },
                         icon: Icon(Icons.menu))
                   ],
